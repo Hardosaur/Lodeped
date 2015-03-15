@@ -1,0 +1,17 @@
+a { text-decoration: none }
+body { background-color: white; font-size: 11px; font-family: Verdana, Arial, sans-serif; }
+input { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 2px; padding-left: 5px; }
+input.button { border: outset #aaaaaa 2px; }
+input.field { background-color: #eeeeee; width: 300px}
+input.numfield { background-color: #eeeeee; width: 50px}
+input.hidden { display: none }
+div.table { line-height: 1.2; padding-top: 3px; padding-bottom: 4px; }
+select.field { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 2px; background-color: #eeeeee; width: 300px}
+select.table { font-family: Verdana, Arial, sans-serif; font-size: 10px; border: 0px; padding: 2px; background-color: #eeeeee }
+input.comment { background-color: white; border-bottom: dotted 1px black; width: 250px}
+table.osmotr { background: 0px; border-collapse: collapse; }
+td.left { border-right: dotted 1px #aaaaaa; width: 200px; cursor: default}
+td.field { border-right: dotted 1px #aaaaaa; width: 550px }
+table.osmotr tr td { margin: 0px; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; border-bottom: dotted 1px #aaaaaa; }
+td.header { background-color: #e5e5e5; font-size: 15px; font-weight: bolder; }
+td.section { font-size: 13px; font-weight: bold;}

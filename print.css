@@ -1,0 +1,5 @@
+body, table, p { background-color: white; font: italic 14px "Book Antiqua"}
+p { margin-top: 5px; margin-bottom: 8px; }
+h1 { font: normal 16px Arial; font-weight: bold; margin: 2px; padding: 0px;}
+h2 { font: normal 14px Arial; font-weight: bold; margin: 2px; padding: 0px; }
+h3 { font: normal 14px Arial; font-weight: normal; margin: 4px; padding: 0px; }

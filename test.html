@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Test page</title>
+<meta http-equiv="content-type" content="text/html; charset=win-1251" />
+<style>
+body { background-color: white; font-size: 11px; font-family: Verdana, Arial, sans-serif; }
+input { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 2px; padding-left: 5px;}
+input.field { background-color: #eeeeee; width: 300px}
+input.hidden { display: none }
+select.field { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 2px; pbackground-color: #eeeeee; width: 300px}
+input.comment { background-color: white; border-bottom: dotted 1px black; width: 300px}
+table.osmotr { background: 0px; border-collapse: collapse; }
+td.left { border-right: dotted 1px #aaaaaa; width: 200px}
+td.field { border-right: dotted 1px #aaaaaa; width: 300px }
+table.osmotr tr td { margin: 0px; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; border-bottom: dotted 1px #aaaaaa; }
+td.header { background-color: #e5e5e5; font-size: 15px; font-weight: bolder; }
+td.section { font-size: 13px; font-weight: bold;}
+</style>
+<script>
+//-------------------------------------------------------------------
+// Функция обслуживания самодельного checkbox
+//
+function doCheck (id)
+{
+  var chk = document.getElementById('chk'+id);
+  var input = document.getElementById(id);
+  if (!chk.checked)
+  {
+      input.value='';
+  }
+  else
+  {
+      input.value=chk.value;
+  }
+}
+//-------------------------------------------------------------------
+// Функция обслуживания самодельного select
+//
+function doSelect (id)
+{
+  var lst = document.getElementById('sel'+id);
+  document.getElementById(id).value=lst.options[lst.selectedIndex].value;
+}
+</script>
+</head>
+<body>
+<table class="osmotr" width="100%">
+<tr><td class="left">Поле №1<td class="field"><input class="field" type="text" value="test"/></td><td>(<input type="text" class="comment"/>)</td></tr>
+<tr><td colspan="3" class="header">Заголовок №1</td></tr>
+<tr><td colspan="3" class="section">Секция №1</td></tr>
+<tr><td class="left">Поле №2<td class="field"><select class="field"><option value="пункт 1">пункт 1</option><option value="пункт 2">пункт 2</option></select></td><td>(<input type="text" class="comment"/>)</td></tr>
+<tr><td class="left">Поле №3<td class="field"><input class="hidden" type="text" id="100" name="100" value=""/><input type="checkbox" id="chk100" value="Поле №3" onclick='doCheck(100)'/></td><td>(<input name="c$id" id="c$id" type="text" class="comment"/>)</td></tr>
+<tr><td class="left">Поле №4<td class="field"><input class="field" type="text" value="test"/></td><td>(<input type="text" class="comment"/>)</td></tr>
+<tr><td colspan="3" class="section">Секция №2</td></tr>
+<tr><td class="left">Поле №5<td class="field"><input class="field" type="text" value="test"/><td>(<input type="text" class="comment"/>)</td></td></tr>
+<tr><td class="left">Поле №6<td class="field"><input class="field" type="text" value="test"/><td>(<input type="text" class="comment"/>)</td></td></tr>
+<tr><td class="left">Поле №7<td class="field"><input class="field" type="text" value="test"/><td>(<input type="text" class="comment"/>)</td></td></tr>
+</table>
+</body>
+</html>

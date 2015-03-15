@@ -1,0 +1,28 @@
+body { background-color: white; font-size: 11px; font-family: Verdana, Arial, sans-serif; color: black}
+p { margin: 0px; padding: 2px 3px;}
+h1 { font-family: Arial, Sans-serif; font-size: 20px; margin: 5px 10px; }
+h2 { font-family: Verdana, Arial; font-size: 16px }
+th { background-color: #dddddd; margin: 0px; padding: 3px; font-size: 11px; border-width: 0px 1px 0px; border-style: solid; border-color: #bbbbbb; }
+table { border-collapse: collapse; }
+table.light { margin-top: 10px; margin-bottom: 5px }
+table.light tr td { margin: 0px; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; border-bottom: dotted 1px #aaaaaa; }
+table.report td { border: 1px solid gray; padding: 5px; }
+tr.odd { background-color: #fdfdfd; border-bottom: 1px #c0c0c0 dotted; }
+tr.even { background-color: #f3f3f3; border-bottom: 1px #c0c0c0 dotted;  }
+td.left { border-right: dotted 1px #aaaaaa }
+td.dot { border-right: dotted 1px #aaaaaa; border-left: dotted 1px #aaaaaa; text-align: center; width: 70px;}
+td.inactive { color: #703030; }
+input { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 4px; padding-left: 5px; background-color: #eeeeee}
+input.check { background-color: white; }
+input.hidden { display: none }
+input.button { border: outset #aaaaaa 2px; }
+img.button { cursor: pointer; margin: 0px; border: 1px dotted white; }
+img.button:hover { border: 1px solid #dd2020; }
+div.menu {position: absolute; top: 0px; left: 0px; z-index: 2; background-color: #eeeeee; padding: 5px; border: solid #aaaaaa 1px; display:none; cursor: pointer; white-space: nowrap;}
+select { font-family: Verdana, Arial, sans-serif; font-size: 11px; border: 0px; padding: 2px; background-color: #eeeeee}
+td.separator { font-size: 10pt; font-weight: bold; color: #334d39 }
+a { text-decoration: none; color: #2071A3; }
+a.special { color: #307030; }
+.small { font-size: 10px }
+a:hover { color: #dd2020 }
+a.special:hover { color: #dd2020 }
